@@ -1,20 +1,20 @@
 {
-“expo”: {
-“name”: “TAUHID APP”,
-“slug”: “tauhid-app”,
-“version”: “1.0.0”,
-“orientation”: “portrait”,
-“userInterfaceStyle”: “light”,
-“platforms”: [
-“ios”,
-“android”,
-“web”
+"expo": {
+"name": "TAUHID APP",
+"slug": "tauhid-app",
+"version": "1.0.0",
+"orientation": "portrait",
+"userInterfaceStyle": "light",
+"platforms": [
+"ios",
+"android",
+"web"
 ],
-“icon”: “./public/icon-512.png”,
-“web”: {
-“bundler”: “metro”,
-“output”: “single”,
-“favicon”: “./public/icon-192.png”
+"icon": "./public/icon-512.png",
+"web": {
+"bundler": "metro",
+"output": "single",
+"favicon": "./public/icon-192.png"
 }
 }
 }
