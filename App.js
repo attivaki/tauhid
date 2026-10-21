@@ -238,7 +238,17 @@ useEffect(() => {
       {showSplash && (
         <View style={s.splash}>
           <View style={s.ornament}>
-            <Text style={s.crescent}>☾</Text>
+            <Animated.Text
+  style={[
+    s.crescent,
+    {
+      opacity: moonOpacity,
+      transform: [{ scale: moonScale }],
+    },
+  ]}
+>
+  ☾
+</Animated.Text>
             <View style={s.ornamentLine} />
             <Text style={s.ornamentDot}>✦</Text>
           </View>
