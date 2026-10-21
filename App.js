@@ -368,13 +368,15 @@ const s = StyleSheet.create({
   },
 
   splash: {
-    ...StyleSheet.absoluteFillObject,
-    zIndex: 100,
-    backgroundColor: '#063D32',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 24,
-  },
+  ...StyleSheet.absoluteFillObject,
+  zIndex: 100,
+  top: -60,
+  bottom: -60,
+  backgroundColor: '#063D32',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: 24,
+},
 
   ornament: {
     alignItems: 'center',
