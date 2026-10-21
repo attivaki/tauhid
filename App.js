@@ -243,9 +243,11 @@ useEffect(() => {
             <Text style={s.ornamentDot}>✦</Text>
           </View>
 
-          <Text style={s.splashBrand}>
-            TAUHID
-          </Text>
+          <Animated.Text
+  style={[s.splashBrand, { opacity: titleOpacity }]}
+>
+  TAUHID
+</Animated.Text>
 
           <Text style={s.splashApp}>
             A P P
@@ -257,9 +259,11 @@ useEffect(() => {
             ВРЕМЯ НАМАЗА
           </Text>
 
-          <Text style={s.splashBy}>
-            by ATTIVAKI
-          </Text>
+          <Animated.Text
+  style={[s.splashBy, { opacity: byOpacity }]}
+>
+  by ATTIVAKI
+</Animated.Text>
 
           <View style={s.bottomOrnament}>
             <Text style={s.bottomStar}>✦</Text>
