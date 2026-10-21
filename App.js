@@ -45,6 +45,38 @@ const quranSurahs = [
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
+  const moonOpacity = useRef(new Animated.Value(0)).current;
+const moonScale = useRef(new Animated.Value(0.7)).current;
+const titleOpacity = useRef(new Animated.Value(0)).current;
+const byOpacity = useRef(new Animated.Value(0)).current;
+
+useEffect(() => {
+  Animated.sequence([
+    Animated.parallel([
+      Animated.timing(moonOpacity, {
+        toValue: 1,
+        duration: 900,
+        useNativeDriver: true,
+      }),
+      Animated.timing(moonScale, {
+        toValue: 1,
+        duration: 1100,
+        easing: Easing.out(Easing.back(1.4)),
+        useNativeDriver: true,
+      }),
+    ]),
+    Animated.timing(titleOpacity, {
+      toValue: 1,
+      duration: 700,
+      useNativeDriver: true,
+    }),
+    Animated.timing(byOpacity, {
+      toValue: 1,
+      duration: 700,
+      useNativeDriver: true,
+    }),
+  ]).start();
+}, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
